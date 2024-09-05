@@ -78,7 +78,7 @@ const Incidents = () => {
         <TopNavbar />
         <div className="filter-section">
           <div className="filter-group">
-            <label htmlFor="state">State:</label>
+            <label htmlFor="state">State : </label>
             <select id="state" value={state} onChange={handleStateChange}>
               {stateOptions.map((option, index) => (
                 <option key={index} value={option.name}>{option.name}</option>
@@ -86,7 +86,7 @@ const Incidents = () => {
             </select>
           </div>
           <div className="filter-group">
-            <label htmlFor="city">City:</label>
+            <label htmlFor="city">City : </label>
             <select id="city" value={city} onChange={handleCityChange}>
               {cities.map((cityOption, index) => (
                 <option key={index} value={cityOption}>{cityOption}</option>
@@ -94,7 +94,6 @@ const Incidents = () => {
             </select>
           </div>
         </div>
-
         <div className="cards-sec">
           {filteredIncidents.length > 0 ? (
             filteredIncidents.map((incident, index) => (

@@ -123,6 +123,8 @@ const EmergencyContacts = () => {
   );
 
   return (
+    // <div className="container-app">
+    //   <Sidebar/>
     <div className="right-main-sec">
       <h1>Emergency Services here!</h1>
       <p>@ Please select a state and city to view emergency contacts</p>
@@ -190,6 +192,7 @@ const EmergencyContacts = () => {
         )}
       </div>
     </div>
+    // </div>
   );
 };
 

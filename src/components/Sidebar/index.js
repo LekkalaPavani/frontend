@@ -1,9 +1,15 @@
 import React from "react";
 import { FaTachometerAlt, FaExclamationTriangle, FaPhoneAlt, FaBell } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
 import "./index.css"; 
 
 const Sidebar = () => {
+  const navigate = useNavigate();
+  const handleLogout=()=>{
+    // Cookies.remove('jwt')
+    navigate('/');
+
+  }
   return (
     <div className="sidebar">
       <div>
@@ -32,7 +38,7 @@ const Sidebar = () => {
           </Link>
         </li> */}
       </ul>
-    <button className="logout-button">Logout</button>
+    <button className="logout-button" onClick={handleLogout}>Logout</button>
     </div>
   );
 };

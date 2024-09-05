@@ -19,7 +19,7 @@ const handleNotificationClick=()=>{
         <div className='topnav-con'>
             <div className='icon-container'>
                 <FaUserCircle className='profile-icon' onClick={handleProfileClick}/>
-                <h1 className='profile-name'>{volunteer.contactName}</h1>
+                <h1 className='profile-name1'>{volunteer.contactName}</h1>
             </div>
             <div><FaBell className='notification-icon' onClick={handleNotificationClick}/></div>
         </div>

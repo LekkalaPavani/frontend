@@ -94,7 +94,7 @@ const RegisterVolunteer = () => {
       if (response.ok) {
       
         toast.success('Volunteer registered successfully!');
-        navigate('/dashboard');
+        navigate('/login');
       } else {
         const errorData = await response.json();
         setErrorMessage(errorData.message);

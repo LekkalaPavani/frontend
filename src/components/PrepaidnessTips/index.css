@@ -22,6 +22,9 @@
     height: 60%;
     background-color: #1457c3;
     border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; 
+   
   
 
 
@@ -35,6 +38,8 @@
     height: 50%;
     background-color: #1666fb;
     border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; 
    
 
 }
@@ -47,6 +52,8 @@
     height: 50%;
     background-color: #81b1fa;
     border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; 
 
 
 }
@@ -54,4 +61,10 @@
     font-size: 20px;
     font-size: 20px;
     color: white;
+}
+
+
+.tips-card1:hover, .tips-card2:hover, .tips-card3:hover {
+    transform: translateY(-5px) scale(1.02); /* Subtle hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
 }
